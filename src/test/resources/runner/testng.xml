@@ -10,7 +10,7 @@
 	
 	
 	</listeners>
-	<test name="Selendroid App Test">
+	<test name="Ebay App Test">
 		<classes>
 			<class name="testcases.care.EbayTest"></class>
 		</classes>
