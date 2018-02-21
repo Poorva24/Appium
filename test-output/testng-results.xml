@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="4" failed="0" total="4" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="TestNG Learning" duration-ms="103" started-at="2018-02-19T04:19:59Z" finished-at="2018-02-19T04:19:59Z">
+    <groups>
+    </groups>
+    <test name="Selendroid App Test" duration-ms="103" started-at="2018-02-19T04:19:59Z" finished-at="2018-02-19T04:19:59Z">
+      <class name="testcases.care.EbayTest">
+        <test-method status="FAIL" signature="setUp()[pri:0, instance:testcases.care.EbayTest@56e8b606]" name="setUp" is-config="true" duration-ms="0" started-at="2018-02-19T09:49:55Z" finished-at="2018-02-19T09:49:55Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at base.TestBase.setUp(TestBase.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:296)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="init()[pri:0, instance:testcases.care.EbayTest@56e8b606]" name="init" is-config="true" duration-ms="0" started-at="2018-02-19T09:49:59Z" finished-at="2018-02-19T09:49:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="SKIP" signature="login()[pri:0, instance:testcases.care.EbayTest@56e8b606]" name="login" duration-ms="2" started-at="2018-02-19T09:49:59Z" finished-at="2018-02-19T09:49:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="Shopping()[pri:0, instance:testcases.care.EbayTest@56e8b606]" name="Shopping" duration-ms="2" started-at="2018-02-19T09:49:59Z" finished-at="2018-02-19T09:49:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Shopping -->
+        <test-method status="SKIP" signature="Swipe()[pri:0, instance:testcases.care.EbayTest@56e8b606]" name="Swipe" duration-ms="1" started-at="2018-02-19T09:49:59Z" finished-at="2018-02-19T09:49:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Swipe -->
+        <test-method status="SKIP" signature="Scroll()[pri:0, instance:testcases.care.EbayTest@56e8b606]" name="Scroll" duration-ms="1" started-at="2018-02-19T09:49:59Z" finished-at="2018-02-19T09:49:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scroll -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:testcases.care.EbayTest@56e8b606]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-02-19T09:49:59Z" finished-at="2018-02-19T09:49:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.care.EbayTest -->
+    </test> <!-- Selendroid App Test -->
+  </suite> <!-- TestNG Learning -->
+</testng-results>

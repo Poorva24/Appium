@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Selendroid App Test"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="80.983">
+  <properties />
+  
+  
+            <testcase name="login" time="33.796" classname="testcases.care.EbayTest" />
+                <testcase name="Shopping" time="42.442" classname="testcases.care.EbayTest" />
+                <testcase name="SwipeScroll" time="4.745" classname="testcases.care.EbayTest" />
+      
+</testsuite>

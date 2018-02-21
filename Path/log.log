@@ -1,0 +1,866 @@
+2018-02-19 06:06:27:524 - warn: Appium support for versions of node < 0.12 has been deprecated and will be removed in a future version. Please upgrade!
+2018-02-19 06:06:27:576 - info: Welcome to Appium v1.4.13 (REV c75d8adcb66a75818a542fe1891a34260c21f76a)
+2018-02-19 06:06:27:576 - info: Appium REST http interface listener started on 127.0.0.1:4723
+2018-02-19 06:06:27:578 - info: [debug] Non-default server args: {"address":"127.0.0.1","log":"C:\\Users\\Rajanikant\\Appium1.5FrameworkPOM\\Path\\log.log","logNoColors":true,"platformName":"Android","platformVersion":"23","automationName":"Appium"}
+2018-02-19 06:06:27:578 - info: Console LogLevel: debug
+2018-02-19 06:06:27:578 - info: File LogLevel: debug
+2018-02-19 06:06:56:716 - info: --> POST /wd/hub/session {"desiredCapabilities":{"appPackage":"com.ebay.mobile","appActivity":"com.ebay.mobile.activities.MainActivity","platformVersion":"6.0.1","automationName":"Appium","browserName":"null","platformName":"Android","deviceName":"GalaxyJ7"}}
+2018-02-19 06:06:56:721 - info: Client User-Agent string: Apache-HttpClient/4.5.2 (Java/1.8.0_111)
+2018-02-19 06:06:56:728 - info: [debug] Didn't get app but did get Android package, will attempt to launch it on the device
+2018-02-19 06:06:56:730 - info: [debug] Creating new appium session fbcfa7f0-260b-4407-8eeb-bf0e108d6659
+2018-02-19 06:06:56:731 - info: Starting android appium
+2018-02-19 06:06:56:733 - info: [debug] Getting Java version
+2018-02-19 06:06:56:925 - info: Java version is: 1.8.0_111
+2018-02-19 06:06:56:925 - info: [debug] Checking whether adb is present
+2018-02-19 06:06:56:927 - info: [debug] Using adb from C:\AndriodSDK\platform-tools\adb.exe
+2018-02-19 06:06:56:927 - warn: No app capability, can't parse package/activity
+2018-02-19 06:06:56:927 - info: [debug] Using fast reset? true
+2018-02-19 06:06:56:928 - info: [debug] Preparing device for session
+2018-02-19 06:06:56:928 - info: [debug] Not checking whether app is present since we are assuming it's already on the device
+2018-02-19 06:06:56:928 - info: Retrieving device
+2018-02-19 06:06:56:928 - info: [debug] Trying to find a connected android device
+2018-02-19 06:06:56:928 - info: [debug] Getting connected devices...
+2018-02-19 06:06:56:929 - info: [debug] executing cmd: C:\AndriodSDK\platform-tools\adb.exe devices
+2018-02-19 06:06:56:980 - info: [debug] 1 device(s) connected
+2018-02-19 06:06:56:980 - info: Found device 3300cc69c006627b
+2018-02-19 06:06:56:980 - info: [debug] Setting device id to 3300cc69c006627b
+2018-02-19 06:06:56:981 - info: [debug] Waiting for device to be ready and to respond to shell commands (timeout = 5)
+2018-02-19 06:06:56:981 - info: [debug] executing cmd: C:\AndriodSDK\platform-tools\adb.exe -s 3300cc69c006627b wait-for-device
+2018-02-19 06:06:57:024 - info: [debug] executing cmd: C:\AndriodSDK\platform-tools\adb.exe -s 3300cc69c006627b shell "echo 'ready'"
+2018-02-19 06:06:57:109 - info: [debug] Starting logcat capture
+2018-02-19 06:06:57:183 - info: [debug] Getting device API level
+2018-02-19 06:06:57:183 - info: [debug] executing cmd: C:\AndriodSDK\platform-tools\adb.exe -s 3300cc69c006627b shell "getprop ro.build.version.sdk"
+2018-02-19 06:06:57:283 - info: [debug] Device is at API Level 23
+2018-02-19 06:06:57:284 - info: Device API level is: 23
+2018-02-19 06:06:57:284 - info: [debug] Extracting strings for language: default
+2018-02-19 06:06:57:284 - info: [debug] Apk doesn't exist locally
+2018-02-19 06:06:57:284 - info: [debug] Could not get strings, but it looks like we had an old strings file anyway, so ignoring
+2018-02-19 06:06:57:285 - info: [debug] executing cmd: C:\AndriodSDK\platform-tools\adb.exe -s 3300cc69c006627b shell "rm -rf /data/local/tmp/strings.json"
+2018-02-19 06:06:57:379 - info: [debug] Not uninstalling app since server not started with --full-reset
+2018-02-19 06:06:57:379 - info: [debug] Skipping install since we launched with a package instead of an app path
+2018-02-19 06:06:57:379 - info: [debug] Forwarding system:4724 to device:4724
+2018-02-19 06:06:57:379 - info: [debug] executing cmd: C:\AndriodSDK\platform-tools\adb.exe -s 3300cc69c006627b forward tcp:4724 tcp:4724
+2018-02-19 06:06:57:431 - info: [debug] Pushing appium bootstrap to device...
+2018-02-19 06:06:57:432 - info: [debug] executing cmd: C:\AndriodSDK\platform-tools\adb.exe -s 3300cc69c006627b push "C:\\Program Files (x86)\\Appium\\node_modules\\appium\\build\\android_bootstrap\\AppiumBootstrap.jar" /data/local/tmp/
+2018-02-19 06:06:57:492 - info: [debug] Pushing settings apk to device...
+2018-02-19 06:06:57:494 - info: [debug] executing cmd: C:\AndriodSDK\platform-tools\adb.exe -s 3300cc69c006627b install "C:\Program Files (x86)\Appium\node_modules\appium\build\settings_apk\settings_apk-debug.apk"
+2018-02-19 06:07:06:523 - info: [debug] Pushing unlock helper app to device...
+2018-02-19 06:07:06:525 - info: [debug] executing cmd: C:\AndriodSDK\platform-tools\adb.exe -s 3300cc69c006627b install "C:\Program Files (x86)\Appium\node_modules\appium\build\unlock_apk\unlock_apk-debug.apk"
+2018-02-19 06:07:09:239 - info: Starting App
+2018-02-19 06:07:09:239 - info: [debug] Attempting to kill all 'uiautomator' processes
+2018-02-19 06:07:09:240 - info: [debug] Getting all processes with 'uiautomator'
+2018-02-19 06:07:09:242 - info: [debug] executing cmd: C:\AndriodSDK\platform-tools\adb.exe -s 3300cc69c006627b shell "ps 'uiautomator'"
+2018-02-19 06:07:09:459 - info: [debug] No matching processes found
+2018-02-19 06:07:09:459 - info: [debug] Running bootstrap
+2018-02-19 06:07:09:460 - info: [debug] spawning: C:\AndriodSDK\platform-tools\adb.exe -s 3300cc69c006627b shell uiautomator runtest AppiumBootstrap.jar -c io.appium.android.bootstrap.Bootstrap -e pkg com.ebay.mobile -e disableAndroidWatchers false
+2018-02-19 06:07:10:901 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: numtests=1
+2018-02-19 06:07:10:903 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: stream=
+2018-02-19 06:07:10:904 - info: [debug] [UIAUTOMATOR STDOUT] io.appium.android.bootstrap.Bootstrap:
+2018-02-19 06:07:10:905 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+2018-02-19 06:07:10:905 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: test=testRunServer
+2018-02-19 06:07:10:905 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: class=io.appium.android.bootstrap.Bootstrap
+2018-02-19 06:07:10:906 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: current=1
+2018-02-19 06:07:10:906 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS_CODE: 1
+2018-02-19 06:07:10:953 - info: [debug] [BOOTSTRAP] [debug] Socket opened on port 4724
+2018-02-19 06:07:10:956 - info: [debug] [BOOTSTRAP] [debug] Appium Socket Server Ready
+2018-02-19 06:07:10:957 - info: [debug] [BOOTSTRAP] [debug] Loading json...
+2018-02-19 06:07:10:959 - info: [debug] Waking up device if it's not alive
+2018-02-19 06:07:10:959 - info: [debug] Pushing command to appium work queue: ["wake",{}]
+2018-02-19 06:07:10:960 - info: [debug] [BOOTSTRAP] [debug] Registered crash watchers.
+2018-02-19 06:07:10:963 - info: [debug] [BOOTSTRAP] [debug] Client connected
+2018-02-19 06:07:10:965 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"wake","params":{}}
+2018-02-19 06:07:10:965 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-02-19 06:07:10:965 - info: [debug] [BOOTSTRAP] [debug] Got command action: wake
+2018-02-19 06:07:10:970 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":true}
+2018-02-19 06:07:10:972 - info: [debug] executing cmd: C:\AndriodSDK\platform-tools\adb.exe -s 3300cc69c006627b shell "dumpsys window"
+2018-02-19 06:07:11:063 - info: [debug] Screen already unlocked, continuing.
+2018-02-19 06:07:11:063 - info: [debug] Pushing command to appium work queue: ["getDataDir",{}]
+2018-02-19 06:07:11:066 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"getDataDir","params":{}}
+2018-02-19 06:07:11:066 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-02-19 06:07:11:066 - info: [debug] [BOOTSTRAP] [debug] Got command action: getDataDir
+2018-02-19 06:07:11:067 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":"\/data\/local\/tmp"}
+2018-02-19 06:07:11:067 - info: [debug] dataDir set to: /data/local/tmp
+2018-02-19 06:07:11:067 - info: [debug] Pushing command to appium work queue: ["compressedLayoutHierarchy",{"compressLayout":false}]
+2018-02-19 06:07:11:070 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"compressedLayoutHierarchy","params":{"compressLayout":false}}
+2018-02-19 06:07:11:070 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-02-19 06:07:11:070 - info: [debug] [BOOTSTRAP] [debug] Got command action: compressedLayoutHierarchy
+2018-02-19 06:07:11:073 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":false}
+2018-02-19 06:07:11:074 - info: [debug] Getting device API level
+2018-02-19 06:07:11:074 - info: [debug] executing cmd: C:\AndriodSDK\platform-tools\adb.exe -s 3300cc69c006627b shell "getprop ro.build.version.sdk"
+2018-02-19 06:07:11:175 - info: [debug] Device is at API Level 23
+2018-02-19 06:07:11:176 - info: [debug] executing cmd: C:\AndriodSDK\platform-tools\adb.exe -s 3300cc69c006627b shell "am start -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000 -n com.ebay.mobile/com.ebay.mobile.activities.MainActivity"
+2018-02-19 06:07:12:859 - info: [debug] Waiting for pkg "com.ebay.mobile" and activity "com.ebay.mobile.activities.MainActivity" to be focused
+2018-02-19 06:07:12:859 - info: [debug] Getting focused package and activity
+2018-02-19 06:07:12:861 - info: [debug] executing cmd: C:\AndriodSDK\platform-tools\adb.exe -s 3300cc69c006627b shell "dumpsys window windows"
+2018-02-19 06:07:12:998 - info: [debug] executing cmd: C:\AndriodSDK\platform-tools\adb.exe -s 3300cc69c006627b shell "getprop ro.build.version.release"
+2018-02-19 06:07:13:076 - info: [debug] Device is at release version 6.0.1
+2018-02-19 06:07:13:076 - info: [debug] Device launched! Ready for commands
+2018-02-19 06:07:13:076 - info: [debug] Setting command timeout to the default of 60 secs
+2018-02-19 06:07:13:076 - info: [debug] Appium session started with sessionId fbcfa7f0-260b-4407-8eeb-bf0e108d6659
+2018-02-19 06:07:13:079 - info: <-- POST /wd/hub/session 303 16364.827 ms - 74 
+2018-02-19 06:07:13:144 - info: --> GET /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659 {}
+2018-02-19 06:07:13:145 - info: [debug] Responding to client with success: {"status":0,"value":{"platform":"LINUX","browserName":"null","platformVersion":"6.0.1","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"appPackage":"com.ebay.mobile","appActivity":"com.ebay.mobile.activities.MainActivity","platformVersion":"6.0.1","automationName":"Appium","browserName":"null","platformName":"Android","deviceName":"GalaxyJ7"},"appPackage":"com.ebay.mobile","appActivity":"com.ebay.mobile.activities.MainActivity","automationName":"Appium","platformName":"Android","deviceName":"3300cc69c006627b"},"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:13:147 - info: <-- GET /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659 200 3.014 ms - 705 {"status":0,"value":{"platform":"LINUX","browserName":"null","platformVersion":"6.0.1","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"appPackage":"com.ebay.mobile","appActivity":"com.ebay.mobile.activities.MainActivity","platformVersion":"6.0.1","automationName":"Appium","browserName":"null","platformName":"Android","deviceName":"GalaxyJ7"},"appPackage":"com.ebay.mobile","appActivity":"com.ebay.mobile.activities.MainActivity","automationName":"Appium","platformName":"Android","deviceName":"3300cc69c006627b"},"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:13:163 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts {"type":"implicit","ms":20000}
+2018-02-19 06:07:13:164 - info: [debug] Set Android implicit wait to 20000ms
+2018-02-19 06:07:13:164 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:13:165 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts 200 2.541 ms - 76 {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:14:381 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts {"type":"implicit","ms":0}
+2018-02-19 06:07:14:381 - info: [debug] Set Android implicit wait to 0ms
+2018-02-19 06:07:14:382 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:14:383 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts 200 2.709 ms - 76 {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:14:402 - info: --> GET /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/context {}
+2018-02-19 06:07:14:404 - info: [debug] Responding to client with success: {"status":0,"value":"NATIVE_APP","sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:14:406 - info: <-- GET /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/context 200 3.526 ms - 84 {"status":0,"value":"NATIVE_APP","sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:14:414 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/elements {"using":"id","value":"com.ebay.mobile:id/button_sign_in"}
+2018-02-19 06:07:14:416 - info: [debug] Waiting up to 0ms for condition
+2018-02-19 06:07:14:420 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.ebay.mobile:id/button_sign_in","context":"","multiple":true}]
+2018-02-19 06:07:14:425 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/button_sign_in","context":"","multiple":true}}
+2018-02-19 06:07:14:425 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-02-19 06:07:14:425 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2018-02-19 06:07:14:426 - info: [debug] [BOOTSTRAP] [debug] Finding com.ebay.mobile:id/button_sign_in using ID with the contextId:  multiple: true
+2018-02-19 06:07:14:426 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/button_sign_in]
+2018-02-19 06:07:14:426 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/button_sign_in]
+2018-02-19 06:07:14:426 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2018-02-19 06:07:14:426 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/button_sign_in]
+2018-02-19 06:07:14:844 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2018-02-19 06:07:14:844 - info: [debug] [BOOTSTRAP] [debug] Finding com.ebay.mobile:id/button_sign_in using ID with the contextId:  multiple: true
+2018-02-19 06:07:14:844 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/button_sign_in]
+2018-02-19 06:07:14:844 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/button_sign_in]
+2018-02-19 06:07:14:844 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2018-02-19 06:07:14:844 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/button_sign_in]
+2018-02-19 06:07:15:789 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[]}
+2018-02-19 06:07:15:790 - info: [debug] Condition unmet after 1373ms. Timing out.
+2018-02-19 06:07:15:790 - info: [debug] Responding to client with success: {"status":0,"value":[],"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:15:793 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/elements 200 1376.941 ms - 74 {"status":0,"value":[],"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:16:298 - info: --> GET /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/context {}
+2018-02-19 06:07:16:298 - info: [debug] Responding to client with success: {"status":0,"value":"NATIVE_APP","sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:16:299 - info: <-- GET /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/context 200 1.398 ms - 84 {"status":0,"value":"NATIVE_APP","sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:16:307 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/elements {"using":"id","value":"com.ebay.mobile:id/button_sign_in"}
+2018-02-19 06:07:16:308 - info: [debug] Waiting up to 0ms for condition
+2018-02-19 06:07:16:308 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.ebay.mobile:id/button_sign_in","context":"","multiple":true}]
+2018-02-19 06:07:16:310 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/button_sign_in","context":"","multiple":true}}
+2018-02-19 06:07:16:311 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-02-19 06:07:16:311 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2018-02-19 06:07:16:311 - info: [debug] [BOOTSTRAP] [debug] Finding com.ebay.mobile:id/button_sign_in using ID with the contextId:  multiple: true
+2018-02-19 06:07:16:311 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/button_sign_in]
+2018-02-19 06:07:16:311 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/button_sign_in]
+2018-02-19 06:07:16:311 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2018-02-19 06:07:16:311 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/button_sign_in]
+2018-02-19 06:07:17:017 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (1)
+2018-02-19 06:07:17:017 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=1, RESOURCE_ID=com.ebay.mobile:id/button_sign_in]
+2018-02-19 06:07:17:038 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[{"ELEMENT":"1"}]}
+2018-02-19 06:07:17:040 - info: [debug] Responding to client with success: {"status":0,"value":[{"ELEMENT":"1"}],"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:17:041 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/elements 200 733.721 ms - 89 {"status":0,"value":[{"ELEMENT":"1"}],"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:17:048 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts {"type":"implicit","ms":5000}
+2018-02-19 06:07:17:048 - info: [debug] Set Android implicit wait to 5000ms
+2018-02-19 06:07:17:048 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:17:049 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts 200 0.922 ms - 76 {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:17:062 - info: --> GET /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/element/1/enabled {}
+2018-02-19 06:07:17:062 - info: [debug] Pushing command to appium work queue: ["element:getAttribute",{"elementId":"1","attribute":"enabled"}]
+2018-02-19 06:07:17:071 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:getAttribute","params":{"elementId":"1","attribute":"enabled"}}
+2018-02-19 06:07:17:072 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-02-19 06:07:17:072 - info: [debug] [BOOTSTRAP] [debug] Got command action: getAttribute
+2018-02-19 06:07:17:088 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":"true"}
+2018-02-19 06:07:17:090 - info: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:17:091 - info: <-- GET /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/element/1/enabled 200 29.282 ms - 76 {"status":0,"value":true,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:17:095 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts {"type":"implicit","ms":0}
+2018-02-19 06:07:17:095 - info: [debug] Set Android implicit wait to 0ms
+2018-02-19 06:07:17:095 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:17:096 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts 200 1.389 ms - 76 {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:17:101 - info: --> GET /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/context {}
+2018-02-19 06:07:17:101 - info: [debug] Responding to client with success: {"status":0,"value":"NATIVE_APP","sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:17:103 - info: <-- GET /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/context 200 1.791 ms - 84 {"status":0,"value":"NATIVE_APP","sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:17:107 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/elements {"using":"id","value":"com.ebay.mobile:id/button_sign_in"}
+2018-02-19 06:07:17:107 - info: [debug] Waiting up to 0ms for condition
+2018-02-19 06:07:17:107 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.ebay.mobile:id/button_sign_in","context":"","multiple":true}]
+2018-02-19 06:07:17:109 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/button_sign_in","context":"","multiple":true}}
+2018-02-19 06:07:17:110 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-02-19 06:07:17:110 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2018-02-19 06:07:17:111 - info: [debug] [BOOTSTRAP] [debug] Finding com.ebay.mobile:id/button_sign_in using ID with the contextId:  multiple: true
+2018-02-19 06:07:17:111 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/button_sign_in]
+2018-02-19 06:07:17:111 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/button_sign_in]
+2018-02-19 06:07:17:112 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2018-02-19 06:07:17:112 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/button_sign_in]
+2018-02-19 06:07:17:126 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (1)
+2018-02-19 06:07:17:127 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=1, RESOURCE_ID=com.ebay.mobile:id/button_sign_in]
+2018-02-19 06:07:17:145 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[{"ELEMENT":"2"}]}
+2018-02-19 06:07:17:147 - info: [debug] Responding to client with success: {"status":0,"value":[{"ELEMENT":"2"}],"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:17:147 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/elements 200 40.316 ms - 89 {"status":0,"value":[{"ELEMENT":"2"}],"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:17:156 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts {"type":"implicit","ms":5000}
+2018-02-19 06:07:17:156 - info: [debug] Set Android implicit wait to 5000ms
+2018-02-19 06:07:17:156 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:17:157 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts 200 1.557 ms - 76 {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:17:161 - info: --> GET /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/element/2/displayed {}
+2018-02-19 06:07:17:161 - info: [debug] Pushing command to appium work queue: ["element:getAttribute",{"elementId":"2","attribute":"displayed"}]
+2018-02-19 06:07:17:163 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:getAttribute","params":{"elementId":"2","attribute":"displayed"}}
+2018-02-19 06:07:17:168 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-02-19 06:07:17:171 - info: [debug] [BOOTSTRAP] [debug] Got command action: getAttribute
+2018-02-19 06:07:17:212 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":"true"}
+2018-02-19 06:07:17:213 - info: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:17:214 - info: <-- GET /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/element/2/displayed 200 53.624 ms - 76 {"status":0,"value":true,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:17:223 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts {"type":"implicit","ms":0}
+2018-02-19 06:07:17:223 - info: [debug] Set Android implicit wait to 0ms
+2018-02-19 06:07:17:224 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:17:224 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts 200 1.149 ms - 76 {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:17:230 - info: --> GET /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/context {}
+2018-02-19 06:07:17:230 - info: [debug] Responding to client with success: {"status":0,"value":"NATIVE_APP","sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:17:231 - info: <-- GET /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/context 200 1.355 ms - 84 {"status":0,"value":"NATIVE_APP","sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:17:237 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/elements {"using":"id","value":"com.ebay.mobile:id/button_sign_in"}
+2018-02-19 06:07:17:238 - info: [debug] Waiting up to 0ms for condition
+2018-02-19 06:07:17:239 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.ebay.mobile:id/button_sign_in","context":"","multiple":true}]
+2018-02-19 06:07:17:243 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/button_sign_in","context":"","multiple":true}}
+2018-02-19 06:07:17:244 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-02-19 06:07:17:244 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2018-02-19 06:07:17:244 - info: [debug] [BOOTSTRAP] [debug] Finding com.ebay.mobile:id/button_sign_in using ID with the contextId:  multiple: true
+2018-02-19 06:07:17:244 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/button_sign_in]
+2018-02-19 06:07:17:244 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/button_sign_in]
+2018-02-19 06:07:17:244 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2018-02-19 06:07:17:244 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/button_sign_in]
+2018-02-19 06:07:17:261 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (1)
+2018-02-19 06:07:17:261 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=1, RESOURCE_ID=com.ebay.mobile:id/button_sign_in]
+2018-02-19 06:07:17:275 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[{"ELEMENT":"3"}]}
+2018-02-19 06:07:17:276 - info: [debug] Responding to client with success: {"status":0,"value":[{"ELEMENT":"3"}],"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:17:277 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/elements 200 40.219 ms - 89 {"status":0,"value":[{"ELEMENT":"3"}],"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:17:282 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts {"type":"implicit","ms":5000}
+2018-02-19 06:07:17:283 - info: [debug] Set Android implicit wait to 5000ms
+2018-02-19 06:07:17:283 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:17:284 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts 200 1.585 ms - 76 {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:17:291 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/element/3/click {"id":"3"}
+2018-02-19 06:07:17:291 - info: [debug] Pushing command to appium work queue: ["element:click",{"elementId":"3"}]
+2018-02-19 06:07:17:296 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"3"}}
+2018-02-19 06:07:17:297 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-02-19 06:07:17:297 - info: [debug] [BOOTSTRAP] [debug] Got command action: click
+2018-02-19 06:07:17:512 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":true}
+2018-02-19 06:07:17:512 - info: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:17:513 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/element/3/click 200 222.755 ms - 76 {"status":0,"value":true,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:23:522 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts {"type":"implicit","ms":0}
+2018-02-19 06:07:23:523 - info: [debug] Set Android implicit wait to 0ms
+2018-02-19 06:07:23:523 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:23:525 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts 200 3.342 ms - 76 {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:23:529 - info: --> GET /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/context {}
+2018-02-19 06:07:23:530 - info: [debug] Responding to client with success: {"status":0,"value":"NATIVE_APP","sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:23:530 - info: <-- GET /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/context 200 1.249 ms - 84 {"status":0,"value":"NATIVE_APP","sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:23:536 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/elements {"using":"id","value":"com.ebay.mobile:id/edit_text_username"}
+2018-02-19 06:07:23:537 - info: [debug] Waiting up to 0ms for condition
+2018-02-19 06:07:23:537 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.ebay.mobile:id/edit_text_username","context":"","multiple":true}]
+2018-02-19 06:07:23:541 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/edit_text_username","context":"","multiple":true}}
+2018-02-19 06:07:23:541 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-02-19 06:07:23:542 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2018-02-19 06:07:23:542 - info: [debug] [BOOTSTRAP] [debug] Finding com.ebay.mobile:id/edit_text_username using ID with the contextId:  multiple: true
+2018-02-19 06:07:23:542 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/edit_text_username]
+2018-02-19 06:07:23:542 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/edit_text_username]
+2018-02-19 06:07:23:542 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2018-02-19 06:07:23:542 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/edit_text_username]
+2018-02-19 06:07:23:562 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (1)
+2018-02-19 06:07:23:563 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=1, RESOURCE_ID=com.ebay.mobile:id/edit_text_username]
+2018-02-19 06:07:23:585 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[{"ELEMENT":"4"}]}
+2018-02-19 06:07:23:585 - info: [debug] Responding to client with success: {"status":0,"value":[{"ELEMENT":"4"}],"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:23:586 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/elements 200 49.537 ms - 89 {"status":0,"value":[{"ELEMENT":"4"}],"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:23:591 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts {"type":"implicit","ms":5000}
+2018-02-19 06:07:23:591 - info: [debug] Set Android implicit wait to 5000ms
+2018-02-19 06:07:23:591 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:23:592 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts 200 1.436 ms - 76 {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:23:596 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/element/4/value {"id":"4","value":["topoorvavijay@gmail.com"]}
+2018-02-19 06:07:23:597 - info: [debug] Pushing command to appium work queue: ["element:setText",{"elementId":"4","text":"topoorvavijay@gmail.com","replace":false}]
+2018-02-19 06:07:23:599 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:setText","params":{"elementId":"4","text":"topoorvavijay@gmail.com","replace":false}}
+2018-02-19 06:07:23:600 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-02-19 06:07:23:600 - info: [debug] [BOOTSTRAP] [debug] Got command action: setText
+2018-02-19 06:07:23:602 - info: [debug] [BOOTSTRAP] [debug] Using element passed in.
+2018-02-19 06:07:23:620 - info: [debug] [BOOTSTRAP] [debug] Attempting to clear using UiObject.clearText().
+2018-02-19 06:07:26:681 - info: [debug] [BOOTSTRAP] [debug] Text remains after clearing, but it appears to be hint text.
+2018-02-19 06:07:26:703 - info: [debug] [BOOTSTRAP] [debug] Text not cleared. Assuming remainder is hint text.
+2018-02-19 06:07:26:704 - info: [debug] [BOOTSTRAP] [debug] Sending plain text to element: topoorvavijay@gmail.com
+2018-02-19 06:07:30:197 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":true}
+2018-02-19 06:07:30:197 - info: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:30:199 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/element/4/value 200 6601.094 ms - 76 {"status":0,"value":true,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:33:212 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts {"type":"implicit","ms":0}
+2018-02-19 06:07:33:213 - info: [debug] Set Android implicit wait to 0ms
+2018-02-19 06:07:33:214 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:33:217 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts 200 5.387 ms - 76 {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:33:233 - info: --> GET /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/context {}
+2018-02-19 06:07:33:234 - info: [debug] Responding to client with success: {"status":0,"value":"NATIVE_APP","sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:33:235 - info: <-- GET /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/context 200 2.758 ms - 84 {"status":0,"value":"NATIVE_APP","sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:33:243 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/elements {"using":"id","value":"com.ebay.mobile:id/edit_text_password"}
+2018-02-19 06:07:33:244 - info: [debug] Waiting up to 0ms for condition
+2018-02-19 06:07:33:244 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.ebay.mobile:id/edit_text_password","context":"","multiple":true}]
+2018-02-19 06:07:33:250 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/edit_text_password","context":"","multiple":true}}
+2018-02-19 06:07:33:250 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-02-19 06:07:33:251 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2018-02-19 06:07:33:251 - info: [debug] [BOOTSTRAP] [debug] Finding com.ebay.mobile:id/edit_text_password using ID with the contextId:  multiple: true
+2018-02-19 06:07:33:251 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/edit_text_password]
+2018-02-19 06:07:33:251 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/edit_text_password]
+2018-02-19 06:07:33:252 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2018-02-19 06:07:33:252 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/edit_text_password]
+2018-02-19 06:07:33:270 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (1)
+2018-02-19 06:07:33:270 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=1, RESOURCE_ID=com.ebay.mobile:id/edit_text_password]
+2018-02-19 06:07:33:313 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[{"ELEMENT":"5"}]}
+2018-02-19 06:07:33:313 - info: [debug] Responding to client with success: {"status":0,"value":[{"ELEMENT":"5"}],"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:33:314 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/elements 200 71.465 ms - 89 {"status":0,"value":[{"ELEMENT":"5"}],"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:33:320 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts {"type":"implicit","ms":5000}
+2018-02-19 06:07:33:320 - info: [debug] Set Android implicit wait to 5000ms
+2018-02-19 06:07:33:320 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:33:321 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts 200 0.962 ms - 76 {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:33:325 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/element/5/click {"id":"5"}
+2018-02-19 06:07:33:325 - info: [debug] Pushing command to appium work queue: ["element:click",{"elementId":"5"}]
+2018-02-19 06:07:33:329 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"5"}}
+2018-02-19 06:07:33:329 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-02-19 06:07:33:330 - info: [debug] [BOOTSTRAP] [debug] Got command action: click
+2018-02-19 06:07:33:573 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":true}
+2018-02-19 06:07:33:573 - info: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:33:574 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/element/5/click 200 248.671 ms - 76 {"status":0,"value":true,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:33:578 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts {"type":"implicit","ms":0}
+2018-02-19 06:07:33:578 - info: [debug] Set Android implicit wait to 0ms
+2018-02-19 06:07:33:578 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:33:579 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts 200 1.230 ms - 76 {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:33:583 - info: --> GET /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/context {}
+2018-02-19 06:07:33:586 - info: [debug] Responding to client with success: {"status":0,"value":"NATIVE_APP","sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:33:587 - info: <-- GET /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/context 200 3.458 ms - 84 {"status":0,"value":"NATIVE_APP","sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:33:593 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/elements {"using":"id","value":"com.ebay.mobile:id/edit_text_password"}
+2018-02-19 06:07:33:593 - info: [debug] Waiting up to 0ms for condition
+2018-02-19 06:07:33:594 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.ebay.mobile:id/edit_text_password","context":"","multiple":true}]
+2018-02-19 06:07:33:598 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/edit_text_password","context":"","multiple":true}}
+2018-02-19 06:07:33:598 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-02-19 06:07:33:598 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2018-02-19 06:07:33:598 - info: [debug] [BOOTSTRAP] [debug] Finding com.ebay.mobile:id/edit_text_password using ID with the contextId:  multiple: true
+2018-02-19 06:07:33:599 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/edit_text_password]
+2018-02-19 06:07:33:599 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/edit_text_password]
+2018-02-19 06:07:33:599 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2018-02-19 06:07:33:599 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/edit_text_password]
+2018-02-19 06:07:34:222 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (1)
+2018-02-19 06:07:34:222 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=1, RESOURCE_ID=com.ebay.mobile:id/edit_text_password]
+2018-02-19 06:07:34:257 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[{"ELEMENT":"6"}]}
+2018-02-19 06:07:34:258 - info: [debug] Responding to client with success: {"status":0,"value":[{"ELEMENT":"6"}],"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:34:260 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/elements 200 666.683 ms - 89 {"status":0,"value":[{"ELEMENT":"6"}],"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:34:265 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts {"type":"implicit","ms":5000}
+2018-02-19 06:07:34:266 - info: [debug] Set Android implicit wait to 5000ms
+2018-02-19 06:07:34:266 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:34:267 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts 200 2.068 ms - 76 {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:34:274 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/element/6/value {"id":"6","value":["519619p"]}
+2018-02-19 06:07:34:275 - info: [debug] Pushing command to appium work queue: ["element:setText",{"elementId":"6","text":"519619p","replace":false}]
+2018-02-19 06:07:34:280 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:setText","params":{"elementId":"6","text":"519619p","replace":false}}
+2018-02-19 06:07:34:280 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-02-19 06:07:34:280 - info: [debug] [BOOTSTRAP] [debug] Got command action: setText
+2018-02-19 06:07:34:280 - info: [debug] [BOOTSTRAP] [debug] Using element passed in.
+2018-02-19 06:07:34:312 - info: [debug] [BOOTSTRAP] [debug] Attempting to clear using UiObject.clearText().
+2018-02-19 06:07:36:773 - info: [debug] [BOOTSTRAP] [debug] Sending plain text to element: 519619p
+2018-02-19 06:07:39:479 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":true}
+2018-02-19 06:07:39:480 - info: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:39:483 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/element/6/value 200 5208.192 ms - 76 {"status":0,"value":true,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:42:493 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts {"type":"implicit","ms":0}
+2018-02-19 06:07:42:495 - info: [debug] Set Android implicit wait to 0ms
+2018-02-19 06:07:42:495 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:42:497 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts 200 3.682 ms - 76 {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:42:506 - info: --> GET /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/context {}
+2018-02-19 06:07:42:507 - info: [debug] Responding to client with success: {"status":0,"value":"NATIVE_APP","sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:42:508 - info: <-- GET /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/context 200 1.699 ms - 84 {"status":0,"value":"NATIVE_APP","sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:42:514 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/elements {"using":"id","value":"com.ebay.mobile:id/button_sign_in"}
+2018-02-19 06:07:42:515 - info: [debug] Waiting up to 0ms for condition
+2018-02-19 06:07:42:515 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.ebay.mobile:id/button_sign_in","context":"","multiple":true}]
+2018-02-19 06:07:42:528 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/button_sign_in","context":"","multiple":true}}
+2018-02-19 06:07:42:528 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-02-19 06:07:42:529 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2018-02-19 06:07:42:529 - info: [debug] [BOOTSTRAP] [debug] Finding com.ebay.mobile:id/button_sign_in using ID with the contextId:  multiple: true
+2018-02-19 06:07:42:529 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/button_sign_in]
+2018-02-19 06:07:42:529 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/button_sign_in]
+2018-02-19 06:07:42:529 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2018-02-19 06:07:42:529 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/button_sign_in]
+2018-02-19 06:07:42:548 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (1)
+2018-02-19 06:07:42:549 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=1, RESOURCE_ID=com.ebay.mobile:id/button_sign_in]
+2018-02-19 06:07:42:591 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[{"ELEMENT":"7"}]}
+2018-02-19 06:07:42:592 - info: [debug] Responding to client with success: {"status":0,"value":[{"ELEMENT":"7"}],"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:42:592 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/elements 200 78.521 ms - 89 {"status":0,"value":[{"ELEMENT":"7"}],"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:42:597 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts {"type":"implicit","ms":5000}
+2018-02-19 06:07:42:598 - info: [debug] Set Android implicit wait to 5000ms
+2018-02-19 06:07:42:598 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:42:599 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts 200 2.144 ms - 76 {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:42:605 - info: --> GET /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/element/7/enabled {}
+2018-02-19 06:07:42:606 - info: [debug] Pushing command to appium work queue: ["element:getAttribute",{"elementId":"7","attribute":"enabled"}]
+2018-02-19 06:07:42:610 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:getAttribute","params":{"elementId":"7","attribute":"enabled"}}
+2018-02-19 06:07:42:611 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-02-19 06:07:42:611 - info: [debug] [BOOTSTRAP] [debug] Got command action: getAttribute
+2018-02-19 06:07:42:633 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":"true"}
+2018-02-19 06:07:42:634 - info: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:42:636 - info: <-- GET /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/element/7/enabled 200 30.049 ms - 76 {"status":0,"value":true,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:42:641 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts {"type":"implicit","ms":0}
+2018-02-19 06:07:42:642 - info: [debug] Set Android implicit wait to 0ms
+2018-02-19 06:07:42:642 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:42:643 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts 200 1.759 ms - 76 {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:42:647 - info: --> GET /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/context {}
+2018-02-19 06:07:42:648 - info: [debug] Responding to client with success: {"status":0,"value":"NATIVE_APP","sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:42:649 - info: <-- GET /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/context 200 1.987 ms - 84 {"status":0,"value":"NATIVE_APP","sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:42:654 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/elements {"using":"id","value":"com.ebay.mobile:id/button_sign_in"}
+2018-02-19 06:07:42:655 - info: [debug] Waiting up to 0ms for condition
+2018-02-19 06:07:42:656 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.ebay.mobile:id/button_sign_in","context":"","multiple":true}]
+2018-02-19 06:07:42:663 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/button_sign_in","context":"","multiple":true}}
+2018-02-19 06:07:42:663 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-02-19 06:07:42:663 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2018-02-19 06:07:42:663 - info: [debug] [BOOTSTRAP] [debug] Finding com.ebay.mobile:id/button_sign_in using ID with the contextId:  multiple: true
+2018-02-19 06:07:42:664 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/button_sign_in]
+2018-02-19 06:07:42:664 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/button_sign_in]
+2018-02-19 06:07:42:664 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2018-02-19 06:07:42:664 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/button_sign_in]
+2018-02-19 06:07:42:699 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (1)
+2018-02-19 06:07:42:700 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=1, RESOURCE_ID=com.ebay.mobile:id/button_sign_in]
+2018-02-19 06:07:42:742 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[{"ELEMENT":"8"}]}
+2018-02-19 06:07:42:742 - info: [debug] Responding to client with success: {"status":0,"value":[{"ELEMENT":"8"}],"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:42:743 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/elements 200 89.044 ms - 89 {"status":0,"value":[{"ELEMENT":"8"}],"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:42:749 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts {"type":"implicit","ms":5000}
+2018-02-19 06:07:42:749 - info: [debug] Set Android implicit wait to 5000ms
+2018-02-19 06:07:42:749 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:42:750 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts 200 1.345 ms - 76 {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:42:754 - info: --> GET /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/element/8/displayed {}
+2018-02-19 06:07:42:754 - info: [debug] Pushing command to appium work queue: ["element:getAttribute",{"elementId":"8","attribute":"displayed"}]
+2018-02-19 06:07:42:759 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:getAttribute","params":{"elementId":"8","attribute":"displayed"}}
+2018-02-19 06:07:42:759 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-02-19 06:07:42:759 - info: [debug] [BOOTSTRAP] [debug] Got command action: getAttribute
+2018-02-19 06:07:42:783 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":"true"}
+2018-02-19 06:07:42:784 - info: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:42:785 - info: <-- GET /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/element/8/displayed 200 31.419 ms - 76 {"status":0,"value":true,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:42:789 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts {"type":"implicit","ms":0}
+2018-02-19 06:07:42:789 - info: [debug] Set Android implicit wait to 0ms
+2018-02-19 06:07:42:789 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:42:790 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts 200 1.395 ms - 76 {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:42:795 - info: --> GET /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/context {}
+2018-02-19 06:07:42:796 - info: [debug] Responding to client with success: {"status":0,"value":"NATIVE_APP","sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:42:796 - info: <-- GET /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/context 200 1.354 ms - 84 {"status":0,"value":"NATIVE_APP","sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:42:800 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/elements {"using":"id","value":"com.ebay.mobile:id/button_sign_in"}
+2018-02-19 06:07:42:800 - info: [debug] Waiting up to 0ms for condition
+2018-02-19 06:07:42:801 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.ebay.mobile:id/button_sign_in","context":"","multiple":true}]
+2018-02-19 06:07:42:807 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/button_sign_in","context":"","multiple":true}}
+2018-02-19 06:07:42:807 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-02-19 06:07:42:807 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2018-02-19 06:07:42:807 - info: [debug] [BOOTSTRAP] [debug] Finding com.ebay.mobile:id/button_sign_in using ID with the contextId:  multiple: true
+2018-02-19 06:07:42:807 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/button_sign_in]
+2018-02-19 06:07:42:807 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/button_sign_in]
+2018-02-19 06:07:42:807 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2018-02-19 06:07:42:808 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/button_sign_in]
+2018-02-19 06:07:42:850 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (1)
+2018-02-19 06:07:42:851 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=1, RESOURCE_ID=com.ebay.mobile:id/button_sign_in]
+2018-02-19 06:07:43:070 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[{"ELEMENT":"9"}]}
+2018-02-19 06:07:43:071 - info: [debug] Responding to client with success: {"status":0,"value":[{"ELEMENT":"9"}],"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:43:072 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/elements 200 272.440 ms - 89 {"status":0,"value":[{"ELEMENT":"9"}],"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:43:077 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts {"type":"implicit","ms":5000}
+2018-02-19 06:07:43:077 - info: [debug] Set Android implicit wait to 5000ms
+2018-02-19 06:07:43:078 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:43:079 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts 200 1.819 ms - 76 {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:43:082 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/element/9/click {"id":"9"}
+2018-02-19 06:07:43:083 - info: [debug] Pushing command to appium work queue: ["element:click",{"elementId":"9"}]
+2018-02-19 06:07:43:086 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"9"}}
+2018-02-19 06:07:43:087 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-02-19 06:07:43:087 - info: [debug] [BOOTSTRAP] [debug] Got command action: click
+2018-02-19 06:07:43:459 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":true}
+2018-02-19 06:07:43:459 - info: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:43:459 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/element/9/click 200 376.422 ms - 76 {"status":0,"value":true,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:46:472 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts {"type":"implicit","ms":0}
+2018-02-19 06:07:46:473 - info: [debug] Set Android implicit wait to 0ms
+2018-02-19 06:07:46:475 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:46:479 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts 200 6.424 ms - 76 {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:46:487 - info: --> GET /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/context {}
+2018-02-19 06:07:46:487 - info: [debug] Responding to client with success: {"status":0,"value":"NATIVE_APP","sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:46:489 - info: <-- GET /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/context 200 2.604 ms - 84 {"status":0,"value":"NATIVE_APP","sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:46:496 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/elements {"using":"id","value":"com.ebay.mobile:id/search_box"}
+2018-02-19 06:07:46:497 - info: [debug] Waiting up to 0ms for condition
+2018-02-19 06:07:46:497 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.ebay.mobile:id/search_box","context":"","multiple":true}]
+2018-02-19 06:07:46:501 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/search_box","context":"","multiple":true}}
+2018-02-19 06:07:46:501 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-02-19 06:07:46:501 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2018-02-19 06:07:46:501 - info: [debug] [BOOTSTRAP] [debug] Finding com.ebay.mobile:id/search_box using ID with the contextId:  multiple: true
+2018-02-19 06:07:46:501 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+2018-02-19 06:07:46:501 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+2018-02-19 06:07:46:502 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2018-02-19 06:07:46:502 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/search_box]
+2018-02-19 06:07:46:531 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (1)
+2018-02-19 06:07:46:531 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=1, RESOURCE_ID=com.ebay.mobile:id/search_box]
+2018-02-19 06:07:46:562 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[{"ELEMENT":"10"}]}
+2018-02-19 06:07:46:563 - info: [debug] Responding to client with success: {"status":0,"value":[{"ELEMENT":"10"}],"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:46:563 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/elements 200 67.125 ms - 90 {"status":0,"value":[{"ELEMENT":"10"}],"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:46:568 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts {"type":"implicit","ms":5000}
+2018-02-19 06:07:46:569 - info: [debug] Set Android implicit wait to 5000ms
+2018-02-19 06:07:46:569 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:46:570 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts 200 1.601 ms - 76 {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:46:573 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/element/10/click {"id":"10"}
+2018-02-19 06:07:46:573 - info: [debug] Pushing command to appium work queue: ["element:click",{"elementId":"10"}]
+2018-02-19 06:07:46:576 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"10"}}
+2018-02-19 06:07:46:577 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-02-19 06:07:46:577 - info: [debug] [BOOTSTRAP] [debug] Got command action: click
+2018-02-19 06:07:46:710 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":true}
+2018-02-19 06:07:46:711 - info: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:46:712 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/element/10/click 200 138.870 ms - 76 {"status":0,"value":true,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:47:719 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts {"type":"implicit","ms":0}
+2018-02-19 06:07:47:720 - info: [debug] Set Android implicit wait to 0ms
+2018-02-19 06:07:47:720 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:47:722 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts 200 3.518 ms - 76 {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:47:733 - info: --> GET /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/context {}
+2018-02-19 06:07:47:734 - info: [debug] Responding to client with success: {"status":0,"value":"NATIVE_APP","sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:47:739 - info: <-- GET /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/context 200 5.917 ms - 84 {"status":0,"value":"NATIVE_APP","sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:47:747 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/elements {"using":"id","value":"com.ebay.mobile:id/search_src_text"}
+2018-02-19 06:07:47:749 - info: [debug] Waiting up to 0ms for condition
+2018-02-19 06:07:47:750 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.ebay.mobile:id/search_src_text","context":"","multiple":true}]
+2018-02-19 06:07:47:754 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/search_src_text","context":"","multiple":true}}
+2018-02-19 06:07:47:754 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-02-19 06:07:47:755 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2018-02-19 06:07:47:755 - info: [debug] [BOOTSTRAP] [debug] Finding com.ebay.mobile:id/search_src_text using ID with the contextId:  multiple: true
+2018-02-19 06:07:47:755 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_src_text]
+2018-02-19 06:07:47:755 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_src_text]
+2018-02-19 06:07:47:755 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2018-02-19 06:07:47:756 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/search_src_text]
+2018-02-19 06:07:48:213 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (1)
+2018-02-19 06:07:48:213 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=1, RESOURCE_ID=com.ebay.mobile:id/search_src_text]
+2018-02-19 06:07:48:271 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[{"ELEMENT":"11"}]}
+2018-02-19 06:07:48:272 - info: [debug] Responding to client with success: {"status":0,"value":[{"ELEMENT":"11"}],"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:48:273 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/elements 200 525.950 ms - 90 {"status":0,"value":[{"ELEMENT":"11"}],"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:48:278 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts {"type":"implicit","ms":5000}
+2018-02-19 06:07:48:278 - info: [debug] Set Android implicit wait to 5000ms
+2018-02-19 06:07:48:278 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:48:279 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts 200 1.316 ms - 76 {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:48:283 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/element/11/value {"id":"11","value":["Pendrive"]}
+2018-02-19 06:07:48:283 - info: [debug] Pushing command to appium work queue: ["element:setText",{"elementId":"11","text":"Pendrive","replace":false}]
+2018-02-19 06:07:48:287 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:setText","params":{"elementId":"11","text":"Pendrive","replace":false}}
+2018-02-19 06:07:48:288 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-02-19 06:07:48:288 - info: [debug] [BOOTSTRAP] [debug] Got command action: setText
+2018-02-19 06:07:48:288 - info: [debug] [BOOTSTRAP] [debug] Using element passed in.
+2018-02-19 06:07:48:312 - info: [debug] [BOOTSTRAP] [debug] Attempting to clear using UiObject.clearText().
+2018-02-19 06:07:50:910 - info: [debug] [BOOTSTRAP] [debug] Text remains after clearing, but it appears to be hint text.
+2018-02-19 06:07:50:936 - info: [debug] [BOOTSTRAP] [debug] Text not cleared. Assuming remainder is hint text.
+2018-02-19 06:07:50:936 - info: [debug] [BOOTSTRAP] [debug] Sending plain text to element: Pendrive
+2018-02-19 06:07:53:853 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":true}
+2018-02-19 06:07:53:855 - info: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:53:857 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/element/11/value 200 5574.062 ms - 76 {"status":0,"value":true,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:57:864 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts {"type":"implicit","ms":0}
+2018-02-19 06:07:57:864 - info: [debug] Set Android implicit wait to 0ms
+2018-02-19 06:07:57:864 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:57:867 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts 200 4.103 ms - 76 {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:57:875 - info: --> GET /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/context {}
+2018-02-19 06:07:57:877 - info: [debug] Responding to client with success: {"status":0,"value":"NATIVE_APP","sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:57:879 - info: <-- GET /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/context 200 3.866 ms - 84 {"status":0,"value":"NATIVE_APP","sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:57:890 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/elements {"using":"id","value":"com.ebay.mobile:id/text"}
+2018-02-19 06:07:57:891 - info: [debug] Waiting up to 0ms for condition
+2018-02-19 06:07:57:891 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.ebay.mobile:id/text","context":"","multiple":true}]
+2018-02-19 06:07:57:899 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/text","context":"","multiple":true}}
+2018-02-19 06:07:57:901 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-02-19 06:07:57:901 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2018-02-19 06:07:57:902 - info: [debug] [BOOTSTRAP] [debug] Finding com.ebay.mobile:id/text using ID with the contextId:  multiple: true
+2018-02-19 06:07:57:902 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/text]
+2018-02-19 06:07:57:903 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/text]
+2018-02-19 06:07:57:904 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2018-02-19 06:07:57:904 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/text]
+2018-02-19 06:07:57:925 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (1)
+2018-02-19 06:07:57:926 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=1, RESOURCE_ID=com.ebay.mobile:id/text]
+2018-02-19 06:07:57:956 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (2)
+2018-02-19 06:07:57:957 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=2, RESOURCE_ID=com.ebay.mobile:id/text]
+2018-02-19 06:07:58:007 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (3)
+2018-02-19 06:07:58:008 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=3, RESOURCE_ID=com.ebay.mobile:id/text]
+2018-02-19 06:07:58:055 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (4)
+2018-02-19 06:07:58:058 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=4, RESOURCE_ID=com.ebay.mobile:id/text]
+2018-02-19 06:07:58:091 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (5)
+2018-02-19 06:07:58:094 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=5, RESOURCE_ID=com.ebay.mobile:id/text]
+2018-02-19 06:07:58:126 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (6)
+2018-02-19 06:07:58:128 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=6, RESOURCE_ID=com.ebay.mobile:id/text]
+2018-02-19 06:07:58:202 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (7)
+2018-02-19 06:07:58:203 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=7, RESOURCE_ID=com.ebay.mobile:id/text]
+2018-02-19 06:07:58:249 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (8)
+2018-02-19 06:07:58:250 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=8, RESOURCE_ID=com.ebay.mobile:id/text]
+2018-02-19 06:07:58:282 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (9)
+2018-02-19 06:07:58:285 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=9, RESOURCE_ID=com.ebay.mobile:id/text]
+2018-02-19 06:07:58:331 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (10)
+2018-02-19 06:07:58:331 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=10, RESOURCE_ID=com.ebay.mobile:id/text]
+2018-02-19 06:07:58:367 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (11)
+2018-02-19 06:07:58:370 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=11, RESOURCE_ID=com.ebay.mobile:id/text]
+2018-02-19 06:07:58:410 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (12)
+2018-02-19 06:07:58:411 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=12, RESOURCE_ID=com.ebay.mobile:id/text]
+2018-02-19 06:07:58:457 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[{"ELEMENT":"12"},{"ELEMENT":"13"},{"ELEMENT":"14"},{"ELEMENT":"15"},{"ELEMENT":"16"},{"ELEMENT":"17"},{"ELEMENT":"18"},{"ELEMENT":"19"},{"ELEMENT":"20"},{"ELEMENT":"21"},{"ELEMENT":"22"},{"ELEMENT":"23"}]}
+2018-02-19 06:07:58:458 - info: [debug] Responding to client with success: {"status":0,"value":[{"ELEMENT":"12"},{"ELEMENT":"13"},{"ELEMENT":"14"},{"ELEMENT":"15"},{"ELEMENT":"16"},{"ELEMENT":"17"},{"ELEMENT":"18"},{"ELEMENT":"19"},{"ELEMENT":"20"},{"ELEMENT":"21"},{"ELEMENT":"22"},{"ELEMENT":"23"}],"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:58:459 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/elements 200 569.191 ms - 277 {"status":0,"value":[{"ELEMENT":"12"},{"ELEMENT":"13"},{"ELEMENT":"14"},{"ELEMENT":"15"},{"ELEMENT":"16"},{"ELEMENT":"17"},{"ELEMENT":"18"},{"ELEMENT":"19"},{"ELEMENT":"20"},{"ELEMENT":"21"},{"ELEMENT":"22"},{"ELEMENT":"23"}],"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:58:465 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts {"type":"implicit","ms":5000}
+2018-02-19 06:07:58:465 - info: [debug] Set Android implicit wait to 5000ms
+2018-02-19 06:07:58:465 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:58:466 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts 200 1.135 ms - 76 {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:58:469 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/element/12/click {"id":"12"}
+2018-02-19 06:07:58:469 - info: [debug] Pushing command to appium work queue: ["element:click",{"elementId":"12"}]
+2018-02-19 06:07:58:479 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"12"}}
+2018-02-19 06:07:58:480 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-02-19 06:07:58:481 - info: [debug] [BOOTSTRAP] [debug] Got command action: click
+2018-02-19 06:07:58:615 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":true}
+2018-02-19 06:07:58:616 - info: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:07:58:617 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/element/12/click 200 147.751 ms - 76 {"status":0,"value":true,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:02:627 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts {"type":"implicit","ms":0}
+2018-02-19 06:08:02:627 - info: [debug] Set Android implicit wait to 0ms
+2018-02-19 06:08:02:628 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:02:632 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts 200 7.874 ms - 76 {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:02:639 - info: --> GET /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/context {}
+2018-02-19 06:08:02:641 - info: [debug] Responding to client with success: {"status":0,"value":"NATIVE_APP","sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:02:643 - info: <-- GET /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/context 200 4.011 ms - 84 {"status":0,"value":"NATIVE_APP","sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:02:650 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/elements {"using":"id","value":"com.ebay.mobile:id/textview_item_title"}
+2018-02-19 06:08:02:652 - info: [debug] Waiting up to 0ms for condition
+2018-02-19 06:08:02:652 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.ebay.mobile:id/textview_item_title","context":"","multiple":true}]
+2018-02-19 06:08:02:657 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/textview_item_title","context":"","multiple":true}}
+2018-02-19 06:08:02:658 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-02-19 06:08:02:658 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2018-02-19 06:08:02:660 - info: [debug] [BOOTSTRAP] [debug] Finding com.ebay.mobile:id/textview_item_title using ID with the contextId:  multiple: true
+2018-02-19 06:08:02:660 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/textview_item_title]
+2018-02-19 06:08:02:661 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/textview_item_title]
+2018-02-19 06:08:02:661 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2018-02-19 06:08:02:661 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/textview_item_title]
+2018-02-19 06:08:02:678 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (1)
+2018-02-19 06:08:02:679 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=1, RESOURCE_ID=com.ebay.mobile:id/textview_item_title]
+2018-02-19 06:08:02:699 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (2)
+2018-02-19 06:08:02:700 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=2, RESOURCE_ID=com.ebay.mobile:id/textview_item_title]
+2018-02-19 06:08:02:724 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (3)
+2018-02-19 06:08:02:724 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=3, RESOURCE_ID=com.ebay.mobile:id/textview_item_title]
+2018-02-19 06:08:02:751 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (4)
+2018-02-19 06:08:02:756 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=4, RESOURCE_ID=com.ebay.mobile:id/textview_item_title]
+2018-02-19 06:08:02:779 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (5)
+2018-02-19 06:08:02:782 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=5, RESOURCE_ID=com.ebay.mobile:id/textview_item_title]
+2018-02-19 06:08:02:952 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[{"ELEMENT":"24"},{"ELEMENT":"25"},{"ELEMENT":"26"},{"ELEMENT":"27"},{"ELEMENT":"28"}]}
+2018-02-19 06:08:02:952 - info: [debug] Responding to client with success: {"status":0,"value":[{"ELEMENT":"24"},{"ELEMENT":"25"},{"ELEMENT":"26"},{"ELEMENT":"27"},{"ELEMENT":"28"}],"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:02:953 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/elements 200 302.648 ms - 158 {"status":0,"value":[{"ELEMENT":"24"},{"ELEMENT":"25"},{"ELEMENT":"26"},{"ELEMENT":"27"},{"ELEMENT":"28"}],"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:02:959 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts {"type":"implicit","ms":5000}
+2018-02-19 06:08:02:960 - info: [debug] Set Android implicit wait to 5000ms
+2018-02-19 06:08:02:961 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:02:961 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts 200 1.822 ms - 76 {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:02:967 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/element/24/click {"id":"24"}
+2018-02-19 06:08:02:969 - info: [debug] Pushing command to appium work queue: ["element:click",{"elementId":"24"}]
+2018-02-19 06:08:02:971 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"24"}}
+2018-02-19 06:08:02:972 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-02-19 06:08:02:972 - info: [debug] [BOOTSTRAP] [debug] Got command action: click
+2018-02-19 06:08:03:234 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":true}
+2018-02-19 06:08:03:234 - info: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:03:236 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/element/24/click 200 268.261 ms - 76 {"status":0,"value":true,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:07:239 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts {"type":"implicit","ms":0}
+2018-02-19 06:08:07:239 - info: [debug] Set Android implicit wait to 0ms
+2018-02-19 06:08:07:240 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:07:240 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts 200 1.529 ms - 76 {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:07:247 - info: --> GET /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/context {}
+2018-02-19 06:08:07:248 - info: [debug] Responding to client with success: {"status":0,"value":"NATIVE_APP","sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:07:251 - info: <-- GET /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/context 200 3.440 ms - 84 {"status":0,"value":"NATIVE_APP","sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:07:256 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/elements {"using":"id","value":"com.ebay.mobile:id/cell_collection_item"}
+2018-02-19 06:08:07:257 - info: [debug] Waiting up to 0ms for condition
+2018-02-19 06:08:07:258 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.ebay.mobile:id/cell_collection_item","context":"","multiple":true}]
+2018-02-19 06:08:07:262 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/cell_collection_item","context":"","multiple":true}}
+2018-02-19 06:08:07:262 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-02-19 06:08:07:263 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2018-02-19 06:08:07:263 - info: [debug] [BOOTSTRAP] [debug] Finding com.ebay.mobile:id/cell_collection_item using ID with the contextId:  multiple: true
+2018-02-19 06:08:07:263 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/cell_collection_item]
+2018-02-19 06:08:07:264 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/cell_collection_item]
+2018-02-19 06:08:07:264 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2018-02-19 06:08:07:264 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/cell_collection_item]
+2018-02-19 06:08:07:575 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (1)
+2018-02-19 06:08:07:576 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=1, RESOURCE_ID=com.ebay.mobile:id/cell_collection_item]
+2018-02-19 06:08:07:661 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (2)
+2018-02-19 06:08:07:662 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=2, RESOURCE_ID=com.ebay.mobile:id/cell_collection_item]
+2018-02-19 06:08:07:709 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (3)
+2018-02-19 06:08:07:710 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=3, RESOURCE_ID=com.ebay.mobile:id/cell_collection_item]
+2018-02-19 06:08:07:756 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[{"ELEMENT":"29"},{"ELEMENT":"30"},{"ELEMENT":"31"}]}
+2018-02-19 06:08:07:757 - info: [debug] Responding to client with success: {"status":0,"value":[{"ELEMENT":"29"},{"ELEMENT":"30"},{"ELEMENT":"31"}],"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:07:759 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/elements 200 502.798 ms - 124 {"status":0,"value":[{"ELEMENT":"29"},{"ELEMENT":"30"},{"ELEMENT":"31"}],"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:07:764 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts {"type":"implicit","ms":5000}
+2018-02-19 06:08:07:764 - info: [debug] Set Android implicit wait to 5000ms
+2018-02-19 06:08:07:765 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:07:765 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts 200 1.495 ms - 76 {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:07:770 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/element/29/click {"id":"29"}
+2018-02-19 06:08:07:771 - info: [debug] Pushing command to appium work queue: ["element:click",{"elementId":"29"}]
+2018-02-19 06:08:07:773 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"29"}}
+2018-02-19 06:08:07:774 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-02-19 06:08:07:774 - info: [debug] [BOOTSTRAP] [debug] Got command action: click
+2018-02-19 06:08:08:774 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":true}
+2018-02-19 06:08:08:775 - info: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:08:777 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/element/29/click 200 1006.266 ms - 76 {"status":0,"value":true,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:10:784 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts {"type":"implicit","ms":0}
+2018-02-19 06:08:10:784 - info: [debug] Set Android implicit wait to 0ms
+2018-02-19 06:08:10:784 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:10:785 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts 200 1.046 ms - 76 {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:10:788 - info: --> GET /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/context {}
+2018-02-19 06:08:10:788 - info: [debug] Responding to client with success: {"status":0,"value":"NATIVE_APP","sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:10:789 - info: <-- GET /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/context 200 1.028 ms - 84 {"status":0,"value":"NATIVE_APP","sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:10:793 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/elements {"using":"id","value":"com.ebay.mobile:id/button_bin"}
+2018-02-19 06:08:10:793 - info: [debug] Waiting up to 0ms for condition
+2018-02-19 06:08:10:793 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.ebay.mobile:id/button_bin","context":"","multiple":true}]
+2018-02-19 06:08:10:797 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/button_bin","context":"","multiple":true}}
+2018-02-19 06:08:10:797 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-02-19 06:08:10:798 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2018-02-19 06:08:10:798 - info: [debug] [BOOTSTRAP] [debug] Finding com.ebay.mobile:id/button_bin using ID with the contextId:  multiple: true
+2018-02-19 06:08:10:798 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/button_bin]
+2018-02-19 06:08:10:798 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/button_bin]
+2018-02-19 06:08:10:798 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2018-02-19 06:08:10:798 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/button_bin]
+2018-02-19 06:08:11:475 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (1)
+2018-02-19 06:08:11:476 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=1, RESOURCE_ID=com.ebay.mobile:id/button_bin]
+2018-02-19 06:08:11:532 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[{"ELEMENT":"32"}]}
+2018-02-19 06:08:11:532 - info: [debug] Responding to client with success: {"status":0,"value":[{"ELEMENT":"32"}],"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:11:533 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/elements 200 741.525 ms - 90 {"status":0,"value":[{"ELEMENT":"32"}],"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:11:537 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts {"type":"implicit","ms":5000}
+2018-02-19 06:08:11:537 - info: [debug] Set Android implicit wait to 5000ms
+2018-02-19 06:08:11:537 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:11:539 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts 200 1.919 ms - 76 {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:11:542 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/element/32/click {"id":"32"}
+2018-02-19 06:08:11:542 - info: [debug] Pushing command to appium work queue: ["element:click",{"elementId":"32"}]
+2018-02-19 06:08:11:545 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"32"}}
+2018-02-19 06:08:11:546 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-02-19 06:08:11:546 - info: [debug] [BOOTSTRAP] [debug] Got command action: click
+2018-02-19 06:08:11:970 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":true}
+2018-02-19 06:08:11:970 - info: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:11:970 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/element/32/click 200 429.039 ms - 76 {"status":0,"value":true,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:19:977 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts {"type":"implicit","ms":0}
+2018-02-19 06:08:19:978 - info: [debug] Set Android implicit wait to 0ms
+2018-02-19 06:08:19:978 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:19:980 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts 200 2.578 ms - 76 {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:19:988 - info: --> GET /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/context {}
+2018-02-19 06:08:19:989 - info: [debug] Responding to client with success: {"status":0,"value":"NATIVE_APP","sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:19:991 - info: <-- GET /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/context 200 2.765 ms - 84 {"status":0,"value":"NATIVE_APP","sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:19:997 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/elements {"using":"id","value":"com.ebay.mobile:id/home"}
+2018-02-19 06:08:19:998 - info: [debug] Waiting up to 0ms for condition
+2018-02-19 06:08:19:999 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.ebay.mobile:id/home","context":"","multiple":true}]
+2018-02-19 06:08:20:005 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/home","context":"","multiple":true}}
+2018-02-19 06:08:20:005 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-02-19 06:08:20:005 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2018-02-19 06:08:20:005 - info: [debug] [BOOTSTRAP] [debug] Finding com.ebay.mobile:id/home using ID with the contextId:  multiple: true
+2018-02-19 06:08:20:005 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/home]
+2018-02-19 06:08:20:006 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/home]
+2018-02-19 06:08:20:006 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2018-02-19 06:08:20:006 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/home]
+2018-02-19 06:08:20:021 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (1)
+2018-02-19 06:08:20:022 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=1, RESOURCE_ID=com.ebay.mobile:id/home]
+2018-02-19 06:08:20:044 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[{"ELEMENT":"33"}]}
+2018-02-19 06:08:20:045 - info: [debug] Responding to client with success: {"status":0,"value":[{"ELEMENT":"33"}],"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:20:046 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/elements 200 48.765 ms - 90 {"status":0,"value":[{"ELEMENT":"33"}],"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:20:049 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts {"type":"implicit","ms":5000}
+2018-02-19 06:08:20:049 - info: [debug] Set Android implicit wait to 5000ms
+2018-02-19 06:08:20:049 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:20:050 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts 200 1.393 ms - 76 {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:20:055 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/element/33/click {"id":"33"}
+2018-02-19 06:08:20:055 - info: [debug] Pushing command to appium work queue: ["element:click",{"elementId":"33"}]
+2018-02-19 06:08:20:058 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"33"}}
+2018-02-19 06:08:20:059 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-02-19 06:08:20:059 - info: [debug] [BOOTSTRAP] [debug] Got command action: click
+2018-02-19 06:08:20:244 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":true}
+2018-02-19 06:08:20:244 - info: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:20:245 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/element/33/click 200 190.696 ms - 76 {"status":0,"value":true,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:24:253 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts {"type":"implicit","ms":0}
+2018-02-19 06:08:24:255 - info: [debug] Set Android implicit wait to 0ms
+2018-02-19 06:08:24:256 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:24:258 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts 200 5.105 ms - 76 {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:24:268 - info: --> GET /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/context {}
+2018-02-19 06:08:24:269 - info: [debug] Responding to client with success: {"status":0,"value":"NATIVE_APP","sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:24:270 - info: <-- GET /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/context 200 1.867 ms - 84 {"status":0,"value":"NATIVE_APP","sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:24:277 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/elements {"using":"id","value":"com.ebay.mobile:id/design_menu_item_text"}
+2018-02-19 06:08:24:278 - info: [debug] Waiting up to 0ms for condition
+2018-02-19 06:08:24:278 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.ebay.mobile:id/design_menu_item_text","context":"","multiple":true}]
+2018-02-19 06:08:24:287 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/design_menu_item_text","context":"","multiple":true}}
+2018-02-19 06:08:24:288 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-02-19 06:08:24:288 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2018-02-19 06:08:24:288 - info: [debug] [BOOTSTRAP] [debug] Finding com.ebay.mobile:id/design_menu_item_text using ID with the contextId:  multiple: true
+2018-02-19 06:08:24:288 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/design_menu_item_text]
+2018-02-19 06:08:24:289 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/design_menu_item_text]
+2018-02-19 06:08:24:289 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2018-02-19 06:08:24:289 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/design_menu_item_text]
+2018-02-19 06:08:24:300 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (1)
+2018-02-19 06:08:24:302 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=1, RESOURCE_ID=com.ebay.mobile:id/design_menu_item_text]
+2018-02-19 06:08:24:330 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (2)
+2018-02-19 06:08:24:330 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=2, RESOURCE_ID=com.ebay.mobile:id/design_menu_item_text]
+2018-02-19 06:08:24:363 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (3)
+2018-02-19 06:08:24:364 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=3, RESOURCE_ID=com.ebay.mobile:id/design_menu_item_text]
+2018-02-19 06:08:24:393 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (4)
+2018-02-19 06:08:24:394 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=4, RESOURCE_ID=com.ebay.mobile:id/design_menu_item_text]
+2018-02-19 06:08:24:420 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (5)
+2018-02-19 06:08:24:421 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=5, RESOURCE_ID=com.ebay.mobile:id/design_menu_item_text]
+2018-02-19 06:08:24:446 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (6)
+2018-02-19 06:08:24:447 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=6, RESOURCE_ID=com.ebay.mobile:id/design_menu_item_text]
+2018-02-19 06:08:24:478 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (7)
+2018-02-19 06:08:24:478 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=7, RESOURCE_ID=com.ebay.mobile:id/design_menu_item_text]
+2018-02-19 06:08:24:509 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (8)
+2018-02-19 06:08:24:510 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=8, RESOURCE_ID=com.ebay.mobile:id/design_menu_item_text]
+2018-02-19 06:08:24:539 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (9)
+2018-02-19 06:08:24:540 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=9, RESOURCE_ID=com.ebay.mobile:id/design_menu_item_text]
+2018-02-19 06:08:24:570 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[{"ELEMENT":"34"},{"ELEMENT":"35"},{"ELEMENT":"36"},{"ELEMENT":"37"},{"ELEMENT":"38"},{"ELEMENT":"39"},{"ELEMENT":"40"},{"ELEMENT":"41"},{"ELEMENT":"42"}]}
+2018-02-19 06:08:24:570 - info: [debug] Responding to client with success: {"status":0,"value":[{"ELEMENT":"34"},{"ELEMENT":"35"},{"ELEMENT":"36"},{"ELEMENT":"37"},{"ELEMENT":"38"},{"ELEMENT":"39"},{"ELEMENT":"40"},{"ELEMENT":"41"},{"ELEMENT":"42"}],"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:24:571 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/elements 200 294.649 ms - 226 {"status":0,"value":[{"ELEMENT":"34"},{"ELEMENT":"35"},{"ELEMENT":"36"},{"ELEMENT":"37"},{"ELEMENT":"38"},{"ELEMENT":"39"},{"ELEMENT":"40"},{"ELEMENT":"41"},{"ELEMENT":"42"}],"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:24:576 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts {"type":"implicit","ms":5000}
+2018-02-19 06:08:24:577 - info: [debug] Set Android implicit wait to 5000ms
+2018-02-19 06:08:24:577 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:24:578 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/timeouts 200 1.773 ms - 76 {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:24:581 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/element/34/click {"id":"34"}
+2018-02-19 06:08:24:581 - info: [debug] Pushing command to appium work queue: ["element:click",{"elementId":"34"}]
+2018-02-19 06:08:24:585 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"34"}}
+2018-02-19 06:08:24:585 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-02-19 06:08:24:585 - info: [debug] [BOOTSTRAP] [debug] Got command action: click
+2018-02-19 06:08:24:902 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":true}
+2018-02-19 06:08:24:902 - info: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:24:903 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/element/34/click 200 321.184 ms - 76 {"status":0,"value":true,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:28:924 - info: --> GET /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/window/current/size {}
+2018-02-19 06:08:28:925 - info: [debug] Pushing command to appium work queue: ["getDeviceSize"]
+2018-02-19 06:08:28:929 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"getDeviceSize","params":{}}
+2018-02-19 06:08:28:930 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-02-19 06:08:28:930 - info: [debug] [BOOTSTRAP] [debug] Got command action: getDeviceSize
+2018-02-19 06:08:28:939 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":{"height":1280,"width":720}}
+2018-02-19 06:08:28:940 - info: [debug] Responding to client with success: {"status":0,"value":{"height":1280,"width":720},"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:28:942 - info: <-- GET /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/window/current/size 200 18.173 ms - 99 {"status":0,"value":{"height":1280,"width":720},"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:28:947 - info: --> GET /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/window/current/size {}
+2018-02-19 06:08:28:947 - info: [debug] Pushing command to appium work queue: ["getDeviceSize"]
+2018-02-19 06:08:28:952 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"getDeviceSize","params":{}}
+2018-02-19 06:08:28:956 - info: [debug] Responding to client with success: {"status":0,"value":{"height":1280,"width":720},"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:28:957 - info: <-- GET /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/window/current/size 200 10.081 ms - 99 {"status":0,"value":{"height":1280,"width":720},"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:28:959 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-02-19 06:08:28:959 - info: [debug] [BOOTSTRAP] [debug] Got command action: getDeviceSize
+2018-02-19 06:08:28:960 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":{"height":1280,"width":720}}
+2018-02-19 06:08:28:964 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/touch/perform {"actions":[{"action":"press","options":{"x":540,"y":256}},{"action":"wait","options":{"ms":500}},{"action":"moveTo","options":{"x":251,"y":256}},{"action":"release","options":{}}]}
+2018-02-19 06:08:28:966 - info: [debug] Pushing command to appium work queue: ["swipe",{"startX":540,"startY":256,"endX":251,"endY":256,"steps":14}]
+2018-02-19 06:08:28:969 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"swipe","params":{"startX":540,"startY":256,"endX":251,"endY":256,"steps":14}}
+2018-02-19 06:08:28:970 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-02-19 06:08:28:970 - info: [debug] [BOOTSTRAP] [debug] Got command action: swipe
+2018-02-19 06:08:28:980 - info: [debug] [BOOTSTRAP] [debug] Display bounds: [0,0][720,1280]
+2018-02-19 06:08:28:982 - info: [debug] [BOOTSTRAP] [debug] Display bounds: [0,0][720,1280]
+2018-02-19 06:08:29:001 - info: [debug] [BOOTSTRAP] [debug] Swiping from [x=540.0, y=256.0] to [x=251.0, y=256.0] with steps: 14
+2018-02-19 06:08:29:299 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":true}
+2018-02-19 06:08:29:299 - info: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:29:300 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/touch/perform 200 335.468 ms - 76 {"status":0,"value":true,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:29:304 - info: --> GET /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/window/current/size {}
+2018-02-19 06:08:29:305 - info: [debug] Pushing command to appium work queue: ["getDeviceSize"]
+2018-02-19 06:08:29:308 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"getDeviceSize","params":{}}
+2018-02-19 06:08:29:308 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-02-19 06:08:29:308 - info: [debug] [BOOTSTRAP] [debug] Got command action: getDeviceSize
+2018-02-19 06:08:29:310 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":{"height":1280,"width":720}}
+2018-02-19 06:08:29:311 - info: [debug] Responding to client with success: {"status":0,"value":{"height":1280,"width":720},"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:29:311 - info: <-- GET /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/window/current/size 200 6.897 ms - 99 {"status":0,"value":{"height":1280,"width":720},"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:29:316 - info: --> POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/touch/perform {"actions":[{"action":"press","options":{"x":360,"y":1024}},{"action":"wait","options":{"ms":500}},{"action":"moveTo","options":{"x":360,"y":256}},{"action":"release","options":{}}]}
+2018-02-19 06:08:29:317 - info: [debug] Pushing command to appium work queue: ["swipe",{"startX":360,"startY":1024,"endX":360,"endY":256,"steps":14}]
+2018-02-19 06:08:29:320 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"swipe","params":{"startX":360,"startY":1024,"endX":360,"endY":256,"steps":14}}
+2018-02-19 06:08:29:320 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2018-02-19 06:08:29:320 - info: [debug] [BOOTSTRAP] [debug] Got command action: swipe
+2018-02-19 06:08:29:322 - info: [debug] [BOOTSTRAP] [debug] Display bounds: [0,0][720,1280]
+2018-02-19 06:08:29:323 - info: [debug] [BOOTSTRAP] [debug] Display bounds: [0,0][720,1280]
+2018-02-19 06:08:29:324 - info: [debug] [BOOTSTRAP] [debug] Swiping from [x=360.0, y=1024.0] to [x=360.0, y=256.0] with steps: 14
+2018-02-19 06:08:29:617 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":true}
+2018-02-19 06:08:29:617 - info: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:29:618 - info: <-- POST /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659/touch/perform 200 302.773 ms - 76 {"status":0,"value":true,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:33:641 - info: --> DELETE /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659 {}
+2018-02-19 06:08:33:642 - info: Shutting down appium session
+2018-02-19 06:08:33:643 - info: [debug] Pressing the HOME button
+2018-02-19 06:08:33:644 - info: [debug] executing cmd: C:\AndriodSDK\platform-tools\adb.exe -s 3300cc69c006627b shell "input keyevent 3"
+2018-02-19 06:08:35:766 - info: [debug] Stopping logcat capture
+2018-02-19 06:08:35:774 - info: [debug] Logcat terminated with code null, signal SIGTERM
+2018-02-19 06:08:35:781 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"shutdown"}
+2018-02-19 06:08:35:781 - info: [debug] [BOOTSTRAP] [debug] Got command of type SHUTDOWN
+2018-02-19 06:08:35:781 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":"OK, shutting down"}
+2018-02-19 06:08:35:787 - info: [debug] Sent shutdown command, waiting for UiAutomator to stop...
+2018-02-19 06:08:35:817 - info: [debug] [BOOTSTRAP] [debug] Closed client connection
+2018-02-19 06:08:35:820 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: numtests=1
+2018-02-19 06:08:35:821 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: stream=.
+2018-02-19 06:08:35:821 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+2018-02-19 06:08:35:822 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: test=testRunServer
+2018-02-19 06:08:35:822 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: class=io.appium.android.bootstrap.Bootstrap
+2018-02-19 06:08:35:822 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: current=1
+2018-02-19 06:08:35:822 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS_CODE: 0
+2018-02-19 06:08:35:830 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: stream=
+2018-02-19 06:08:35:830 - info: [debug] [UIAUTOMATOR STDOUT] Test results for WatcherResultPrinter=.
+2018-02-19 06:08:35:831 - info: [debug] [UIAUTOMATOR STDOUT] Time: 85.004
+2018-02-19 06:08:35:831 - info: [debug] [UIAUTOMATOR STDOUT] OK (1 test)
+2018-02-19 06:08:35:831 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS_CODE: -1
+2018-02-19 06:08:35:980 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_RESULT: shortMsg=java.lang.SecurityException
+2018-02-19 06:08:35:980 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_RESULT: longMsg=Permission Denial: getIntentSender() from pid=18447, uid=2000, (need uid=1000) is not allowed to send as package android
+2018-02-19 06:08:35:980 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_CODE: 0
+2018-02-19 06:08:35:985 - info: [debug] UiAutomator shut down normally
+2018-02-19 06:08:35:986 - info: [debug] Cleaning up android objects
+2018-02-19 06:08:35:986 - info: [debug] Cleaning up appium session
+2018-02-19 06:08:35:987 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}
+2018-02-19 06:08:35:988 - info: <-- DELETE /wd/hub/session/fbcfa7f0-260b-4407-8eeb-bf0e108d6659 200 2348.140 ms - 76 {"status":0,"value":null,"sessionId":"fbcfa7f0-260b-4407-8eeb-bf0e108d6659"}

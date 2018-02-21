@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Selendroid App Test"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="86.085">
+  <properties />
+  
+  
+            <testcase name="login" time="32.857" classname="testcases.care.CareLoginTest" />
+                <testcase name="Swipe" time="4.660" classname="testcases.care.CareLoginTest" />
+                <testcase name="Scroll" time="5.970" classname="testcases.care.CareLoginTest" />
+                <testcase name="Shopping" time="42.598" classname="testcases.care.CareLoginTest" />
+      
+</testsuite>

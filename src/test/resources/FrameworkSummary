@@ -1,0 +1,38 @@
+#Framework Summary
+This is page object model framework
+Page Object model is an object design pattern , where web pages are represented as classes, and 
+the various elements on the page are
+ defined as variables on the class.
+ 
+ 1.Test cases are written in TestNg
+ 2.For reading Test data apache poi is used 
+ 3.Appium logs are saving in file - add Path in settings of Appium server tool
+   check Appium.log for logs
+ 
+ 4. For maintaining environment configuration .properties file is used
+ 
+ 5. For reports refer test-output folder
+ 
+  a. Extent.html for Extend report
+  b. emailable-report.html
+ 
+ 
+ # Information about classes
+ 
+ Excelreader.java for reading xlsx file
+ Appiumserver.java to start server
+ CommonUtils.java for common utility purpose (take screen shot etc)
+ ScreenBase.java for common methods and objects
+ Test Base.Java for initial setups
+ ExtentReporterNG.java for extend report
+ CustomListeners.java for listeners
+ #How to run
+ 
+ To run use testng.xml
+ 
+ #Scenario Automated
+ 
+ 1.Login
+ 2.Add product till buy it now functionality 
+ 
+ 
